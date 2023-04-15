@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital@1&display=swap');
+
+:root {
+    --corPrincipal: #191970;
+    --corSecundaria: #d3dee6;
+    --corTitulo: #00008B;
+}
+
+body {
+    background-image: url("imagens/image2.png");
+    background-size: cover;
+    /* background-repeat: repeat-x; */
+    
+}
+
+*{
+    margin:0px;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.cabecalho {
+    
+    display: inline;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.cabecalho h1 {
+    text-align: center;
+    color: var(--corPrincipal);
+}
+
+.cabecalho img {
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+}
+    
+.container-input {
+    display: flex;
+    justify-content: space-around;
+    color: var(--corPrincipal);
+    
+}
+
+.container-input .input {
+    border-style: outset;
+    width: 50%;
+    height: 100%;
+}
+
+#input-texto {
+    width: 100%;
+    height: 360px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: rgb(63, 63, 141);
+    box-shadow: grey;
+    border: #7272be;
+    margin: auto;
+    outline: 0;
+    padding: 20px;
+    text-transform: lowercase;
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--corTitulo);
+    border-radius: 20px;
+    width: 420px;
+    height: 700px;
+    margin-right: 3%;
+}
+
+#output h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+#output span {
+    font-size: 16px;
+    text-align: center;
+}
+ 
+/* #output img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+}  */
+
+.container-btn button {
+    border: 2px solid var(--corTitulo);
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 90%;
+    font-weight: bold;
+    color: #13052d;
+    width: 150px;
+    height: 50px;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+.btn-copiar {
+    border: 2px solid var(--corTitulo);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #13052d;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10%;
+    margin-left: 30%; 
+    cursor: pointer;
+}
+
+.container-btn button:hover {
+    border: 2px;
+    transition: 1.5s all;
+
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-top: 15px;
+    background: lightblue;
+    color: var(--corTitulo);
+}
+
+.rodape h3 {
+    font-size: 16px;
+}
+
+.icons ion-icon {
+    width: 25px;
+    height: 25px;
+    counter-reset: var(--corTitulo);
+}
+
+.icons ion-icon:hover {
+    color: var(--corSecundaria);
+}
