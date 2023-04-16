@@ -149,3 +149,7 @@ body {
 .icons ion-icon:hover {
     color: var(--corSecundaria);
 }
+
+@media screen and (max-width: 480px) {
+    
+}
